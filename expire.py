@@ -4,7 +4,7 @@ import webbrowser
 import sys
 import time
 from datetime import datetime
-CSV_URL = "https://raw.githubusercontent.com/jaikshaikh/Vortexcodes/refs/heads/main/expiry_list.csv"
+CSV_URL = "https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/expiry_list.csv"
 USER_ID = str(ID)  # Replace ID with actual variable or input
 def live_text(text, delay=0.05):
     """Prints text character by character with a delay for a typing effect."""
@@ -53,7 +53,7 @@ def check_expiry(user_id, csv_data):
             current_time = datetime.now()
             if current_time > expiry_date:
                 live_text(f"    ⏳ Your access has expired! Please contact the developer for more time.")
-                live_text(f"    📩 Contact: https://t.me/Vortexcodez")
+                live_text(f"    📩 Contact: https://t.me/NikzPy")
                 webbrowser.open("https://t.me/Vortexcodez")
                 exit()
             else:
@@ -65,7 +65,7 @@ def check_expiry(user_id, csv_data):
         current_time = datetime.now()
         if current_time > expiry_date:
             live_text(f"     ⏳ Your free time is over! Please contact the developer for more time.")
-            webbrowser.open("https://t.me/Vortexcodez")
+            webbrowser.open("https://t.me/NikzPy")
             exit()
         else:
             remaining_time = expiry_date - current_time
@@ -74,8 +74,8 @@ def check_expiry(user_id, csv_data):
 
     if not user_found:
         live_text(f"    🚫 You are not authorized! Please contact the developer.")
-        live_text(f"    📩 Contact: https://t.me/Vortexcodez")
-        webbrowser.open("https://t.me/Vortexcodez")
+        live_text(f"    📩 Contact: https://t.me/NikzPy")
+        webbrowser.open("https://t.me/NikzPy")
         exit()
 
 csv_content = fetch_csv(CSV_URL)
