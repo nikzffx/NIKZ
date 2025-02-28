@@ -23,7 +23,8 @@ options = [
     ("2️⃣", "📜  GMAIL + AOL (META)","   ✅ Active"),
     ("3️⃣", "🗑️  OLD All AGE IG ","✅ Active"),
     ("4️⃣", "📧  Reset Tool", "  ✅ Active"),
-    ("5️⃣", "🎯  Reporting Tool", "    ❌ Inactive"),
+      ("5️⃣", "🛠️  Former Username Remover", "  ❌ Inactive"),
+    ("6️⃣", "🎯  Reporting Tool", "    ❌ Inactive"),
 ]
 for num, feature, status in options:
     table.add_row(num, feature, status)
