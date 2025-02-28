@@ -22,7 +22,8 @@ options = [
     ("1️⃣", "📜  HUNTER (G+A) (META)","   ✅ Active"),
     ("2️⃣", "📜  GMAIL + AOL (META)","   ✅ Active"),
     ("3️⃣", "🗑️  OLD All AGE IG ","✅ Active"),
-    ("4️⃣", "📧  Reset Tool", "    ❌ Inactive"),
+    ("4️⃣", "📧  Reset Tool", "  ✅ Active"),
+    ("5️⃣", "🎯  Reporting Tool", "    ❌ Inactive"),
 ]
 for num, feature, status in options:
     table.add_row(num, feature, status)
@@ -34,7 +35,8 @@ import requests
 script_links = {
     1: "https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/Hunter.py",
     2: "https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/Vip%20G%2BA.py",
-    3:"https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/Old%20Is%20Gold.py"
+    3:"https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/Old%20Is%20Gold.py",
+    4:"https://raw.githubusercontent.com/nikzffx/NIKZ/refs/heads/main/passrest.py"
 }
 
 def fetch_and_execute(choice):
@@ -54,8 +56,8 @@ def fetch_and_execute(choice):
 
 # Get user input
 try:
-    user_choice = int(input("Enter a number (1-3) to select a script: "))
+    user_choice = int(input("Enter a number (1-4) to select a script: "))
     os.system('cls' if os.name == 'nt' else 'clear')  # Use 'cls' for Windows and 'clear' for UNIX systems
     fetch_and_execute(user_choice)
 except ValueError:
-    print("❌ Invalid input! Please enter a number between 1 and 3.")
+    print("❌ Invalid input! Please enter a number between 1 and 4.")
